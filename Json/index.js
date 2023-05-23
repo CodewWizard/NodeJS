@@ -12,7 +12,6 @@ const data ={
 
 console.log(data.name);
 
-
 // if we want to convert from object to json(string), use JSON.stringify() method
 
 const jsonData = JSON.stringify(data);
