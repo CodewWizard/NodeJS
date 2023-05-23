@@ -5,11 +5,13 @@ const server = http.createServer((request, response)=>{
     // console.log(request.url);
     if(request.url == "/userapi"){
         fs.readFile(`./userapi.json`, "utf-8", (err, data)=>{
+            // prints the data on console
             console.log(data);
+
+            // prints the data on browser
             response.end(data);
         })
     }
-    response.end('<h1>hello from port no 8000, this is madiha mujawar</h1>')
 })
 
 server.listen(8000, "127.0.0.1", ()=>{
